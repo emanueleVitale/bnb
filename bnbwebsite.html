@@ -1,74 +1,106 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://
-www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
+<html lang="en">
 <head>
-<meta http-equiv=”Content-Type” content=”text/html”
-charset=”UTF-8”>
+  <meta charset="utf-8">
+  <title>Airbnb Biggest Competitor</title>
 
-<title>
-Airbnb Biggest Competitor
-</title>
-
-
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HTML5 Example Page">
+  <link rel="stylesheet" href="/assets/css/stylesheet.css?v=1">
 </head>
+
 <body>
 
+<header>
+    <h1>Airbnb Competitor</h1>
+  </header>
 
-<h1>Airbnb competitor</h1>
+  <nav>
+    <ul>
+      <li><a href="">Video on bar</a></li>
+      <li><a href="">Audio From our guests</a></li>
+      <li><a href="">painting of my little cousin</a></li>
+    </ul>
+  </nav>
+  
+  
+	<h2>Home</h2>
 
-<h2>Home</h2>
+	<p>This is a bnb website home
+	<br>
+	We like to keep things comfy.
+	<br>
+	Our address is Largo Bolas, 42, Palermo.
+	<br>
+	We have available three rooms for 2 people and one single room.
+	<br>
+	There is a pool, too!
+	<br>
+	</p>
 
-<p>This is a bnb website home
-<br>
-We like to keep things comfy.
-<br>
-Our address is Largo Bolas, 42, Palermo.
-<br>
-We have available three rooms for 2 people and one single room.
-<br>
-There is a pool, too!
-<br>
-</p>
+	<h3>Our free of charge services:</h3>
 
-<h3>Our free of charge services:</h3>
+	<ul>
 
-<ul>
+	<li>Caffè</li>
 
-<li>Caffè</li>
+	<li>Brioche</li>
 
-<li>Brioche</li>
+	<li>Pool</li>
 
-<li>Pool</li>
-
-</ul>
-
-
-<p>
-Here are some photos:
-</p>
-
-
-<img src=sunset-pool-cafe-0.jpeg width="" height="" 
-name="photopool">
-
-<img src=sunset-pool-cafe-0.jpeg width="" height="" 
-name="photo2">
-<img src=sunset-pool-cafe-0.jpeg width="" height=""
-name="photo3">
+	</ul>
 
 
-<h5>
-GO TO:
-</h5>
+	<h3>
+	Here are some photos:
+	</h3>
 
-<a href="http://www.w3c.org"
-target=”_blank” alt=”Questo è
-un collegamento ai contatti”>Contacts!</a>
 
-<a href="http://www.w3c.org"
-target=”_blank” alt=”Questo è
-un collegamento ai prezzi”>Tarifs!</a>
+	<img src=sunset-pool-cafe-0.jpeg width="" height="" 
+	name="photopool">
+
+	<img src=sunset-pool-cafe-0.jpeg width="" height="" 
+	name="photo2">
+	<img src=sunset-pool-cafe-0.jpeg width="" height=""
+	name="photo3">
+
+
+	<h3>Find us:</h3>
+	
+	<p id="demo">Where is our Hotel?</p>
+	<button onclick="getLocation()">Click here, please, for location!</button>
+	<script>
+	var x=document.getElementById("demo");
+
+	function getLocation(){
+		if (navigator.geolocation){
+	//funzione supportata o autorizzata,
+	//richiamo la funzione di callback showPosition
+		navigator.geolocation.getCurrentPosition(showPosition);
+		}else{
+		x.innerHTML= "Geolocation not supported";
+		}
+	}
+	function showPosition(position){
+		x.innerHTML="Latitude: " + position.coords.latitude +
+		" Longitude: " + position.coords.longitude; }
+	</script>
+
+
+	
+	
+	<h4>
+	GO TO:
+	</h4>
+
+	<a href="http://www.w3c.org"
+	target=”_blank” alt=”Questo è
+	un collegamento ai contatti”>Contacts!</a>
+
+	<a href="http://www.w3c.org"
+	target=”_blank” alt=”Questo è
+	un collegamento ai prezzi”>Tarifs!</a>
 
 
 </body>
