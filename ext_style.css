@@ -1,11 +1,45 @@
+body {
+  background-color: brown;
+}
+
+
 h1 {
   background-color: green;
 }
 
-nav {
+h2 {
+  background-color: violet;
+}
+
+h3 {
+  background-color: purple;
+}
+
+
+ul {
+  background-color: red;
+}
+
+table {
+  background-color: lightgreen;
+}
+
+nav, nav > ul {
   background-color: lightblue;
 }
 
 p {
   background-color: yellow;
+}
+
+a {
+  background-color: orange;
+}
+
+:active {
+	
+}
+
+footer {
+  background-color: white;
 }
