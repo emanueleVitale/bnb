@@ -4,14 +4,17 @@ body {
 
 
 h1 {
+	text-align: center-left;
   background-color: green;
 }
 
 h2 {
+	text-align: center-left;
   background-color: violet;
 }
 
 h3 {
+	text-align: left;
   background-color: purple;
 }
 
@@ -21,18 +24,29 @@ ul {
 }
 
 table {
+	text-align: center;
   background-color: lightgreen;
 }
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
 
 nav, nav > ul {
   background-color: lightblue;
 }
 
 p {
+	text-align: left;
   background-color: yellow;
 }
 
 a {
+	text-align:center;
   background-color: orange;
 }
 
@@ -41,5 +55,6 @@ a {
 }
 
 footer {
+	text-decoration: transparent;
   background-color: white;
 }
